@@ -6,6 +6,12 @@ It allows you to use maven to build and zip the project results.
 
 You can also integrate the build in to e.g. Jenkins CI
 
+This project uses submodules so after a clone you will need to do 
+
+`git submodule init`
+
+`git submodule update`
+
 Requirements
 ------------
 * npm
@@ -13,6 +19,9 @@ Requirements
 * bower ( global install )
 * grunt ( global install )
  
+> These need to be available on a CI server as well ! 
+
+
 Building
 --------
 This will result in a .ZIP file in target, which contains the dist contents, you can copy it over to e.g. PhoneGap Build
